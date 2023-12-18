@@ -1,5 +1,4 @@
 import allure
-import selene
 import requests
 from allure_commons._allure import step
 from allure_commons.types import AttachmentType

@@ -3,7 +3,6 @@ import pytest
 import requests
 from allure_commons._allure import step
 from allure_commons.types import AttachmentType
-from requests import Response
 from selene import have
 from selene.support.shared import browser
 
@@ -35,8 +34,3 @@ def login_api():
         browser.element(".account").should(have.text(LOGIN))
     yield
     clear_shopping_cart()
-
-
-
-
-
